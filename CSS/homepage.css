@@ -1,0 +1,199 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #006400;
+}
+
+.sigla {
+    color: #0a3b0a;
+}
+
+.sigla h2 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.menu {
+    width: 80%;
+    text-align: right;
+}
+
+.menu a {
+    color: #808080;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    color: #006400;
+}
+
+section.main {
+    background-image: url('');
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-02 {
+    width: 100%;
+    text-align: center;
+
+}
+
+.main-02 h2 {
+    color: #006400;
+    font-size: 40px;
+}
+
+.main-02 p {
+    color: #808080;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.main-02 button {
+    background-color: #006400;
+    display: inline-block;
+    padding: 8px 25px;
+    color: white;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.center {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre {
+    display: inline-flex;
+    width: 33%;
+    flex-wrap: wrap;
+}
+
+.sobre-02 {
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    margin-right: 5%;
+    padding: 15px 5px;
+}
+
+.sobre-02 i {
+    color: #006400;
+    font-size: 22px;
+}
+
+.sobre-02 h2 {
+    color: #006400;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.sobre-02 p {
+    color: #808080;
+    font-size: 14px;
+}
+
+section.contato {
+    padding: 80px;
+}
+
+.redes {
+    width: 100%;
+    text-align: center;
+}
+
+.redes h2 {
+    color: #006400;
+}
+
+.redes-02 {
+    width: 100%;
+    text-align: center;
+}
+
+.redes-02 p {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .sobre {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .redes-02 {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .main-02 button {
+        background-color: #006400;
+        display: inline-flex;
+        padding: 8px 8px;
+        color: white;
+        border-radius: 6px;
+        border: 0;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .main-02 h2 {
+        font-size: 25px;
+    }
+
+    .main-02 p {
+        font-size: 15px;
+    }
+
+    .config {
+        margin-right: 10px;
+    }
+
+    .config img {
+        width: 30px;
+    }
+}
