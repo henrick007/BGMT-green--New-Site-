@@ -119,8 +119,12 @@ section.main {
     font-size: 14px;
 }
 
+.sobre-02 img {
+    width: 90px;
+}
+
 section.contato {
-    padding: 80px;
+    padding: 50px;
 }
 
 .redes {
@@ -137,11 +141,15 @@ section.contato {
     text-align: center;
 }
 
-.redes-02 p {
+.redes-02 a {
     display: inline-flex;
     flex-wrap: wrap;
     padding: 0 2%;
     align-items: center;
+}
+
+.redes-02 img {
+    width: 40px;
 }
 
 footer {
@@ -168,6 +176,10 @@ footer {
         font-size: 10px;
     }
 
+    .redes-02 img {
+        width: 25px;
+    }
+
     .main-02 button {
         background-color: #006400;
         display: inline-flex;
@@ -176,7 +188,7 @@ footer {
         border-radius: 6px;
         border: 0;
         margin-top: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 60px;
         font-size: 15px;
         cursor: pointer;
     }
@@ -194,6 +206,6 @@ footer {
     }
 
     .config img {
-        width: 30px;
+        width: 20px;
     }
 }
