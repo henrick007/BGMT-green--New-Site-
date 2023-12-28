@@ -89,6 +89,10 @@ section.main {
     flex-wrap: wrap;
 }
 
+.config img {
+    width: 20px;
+}
+
 .sobre {
     display: inline-flex;
     width: 33%;
