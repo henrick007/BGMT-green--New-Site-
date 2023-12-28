@@ -31,17 +31,63 @@
                     Suporte
                 </a>
                 <a class="config" href="/Pages/notificacao.html" onclick="">
-                    <img src="/IMG/bell-solid.svg" alt="Notificacao">
+                    <img src="/IMG/notif.svg" alt="Notificacao">
                 </a>
                 <a class="config" href="/Pages/perfil.html" onclick="">
-                    <img src="/IMG/user-solid.svg" alt="Perfil">
+                    <img src="/IMG/perfil.svg" alt="Perfil">
                 </a>
             </div>
         </div>
     </header>
-    <section>
-
+    <br>
+    <br>
+    <section class="tab">
+        <div>
+            <input type="text" id="bar" placeholder="Pesquisar Clientes...">
+            <button type="submit" class="search">
+                <a>
+                    <img src="/IMG/pesqui.svg" alt="Icon Search">
+                </a>
+            </button>
+        </div>
+        <br>
+        <div>
+            <button type="submit" class="search2">
+                <a href="/Pages/criarclientes.html" onclick="">
+                    <img src="/IMG/add.svg" alt="icon add">
+                </a>
+            </button>
+        </div>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome Fantasia</th>
+                    <th>CPF /CNPJ</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="ID">1000</td>
+                    <td data-title="Nome Fantasia">Teste01</td>
+                    <td data-title="CPF /CNPJ">00.000.000/0001-63</td>
+                    <td data-title="Cidade">Cuiabá</td>
+                    <td data-title="Estado">Mato Grosso</td>
+                    <td data-title="E-mail">Teste01@gmail.com</td>
+                    <td data-title="Telefone">(65)9 9876-5432</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+    <footer>
+        <p>&copy;2023 BGMT green - Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

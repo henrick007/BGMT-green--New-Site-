@@ -46,6 +46,63 @@ header {
     width: 20px;
 }
 
-@media screen and (max-width: 768px) {}
+#bar {
+    width: 95%;
+    border-radius: 5px;
+}
 
-@media screen and (max-width: 425px) {}
+.search {
+    position: relative;
+    background: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.search2 {
+    position: relative;
+    background: none;
+    cursor: pointer;
+    float: right;
+    border: 2px;
+}
+
+.tab {
+    text-align: center;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    font-family: 'poppins', sans-serif;
+    border: 1px solid black;
+    font-size: 11px;
+}
+
+footer {
+    text-align: center;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .config {
+        margin-right: 10px;
+    }
+
+    .config img {
+        width: 20px;
+    }
+}
