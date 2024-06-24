@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(45deg, #006400, #99c199);
+}
+
+img {
+    width: 120px;
+    height: 102px;
+    margin-left: 42px;
+}
+
+.tela {
+    background-color: #191919;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+h1{
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button{
+    background-color: #006400;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #99c199;
+}

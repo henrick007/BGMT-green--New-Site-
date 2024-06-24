@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <title>BGMTgreen/login</title>
+</head>
+<body>
+    <div class="tela">
+        <img src="/IMG/logo bgmt.png" alt="Logotipo do nosso projeto">
+        <h1>Login</h1>
+        <br>
+        <input type="text" id="usuario" placeholder="Usuário">
+        <br><br>
+        <input type="password" id="senha" placeholder="Senha">
+        <br><br>
+        <button type="submit" id="button" onclick="logar(); return false" >Acesar</button>
+    </div>
+
+    <script>
+        function logar(){
+        var usuario = document.getElementById("usuario").value;
+        var senha = document.getElementById("senha").value;
+
+        if (usuario === "adm" && senha === "123"){
+            window.location.href = "/Pages/clientes.html";
+        } else {
+            alert("Usuário ou Senha Inválidos!");
+        }
+        }
+    </script>
+</body>
+</html>

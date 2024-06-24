@@ -5,10 +5,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/alert.css" />
+    <link rel="stylesheet" href="/CSS/notificacao.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BGMTgreen/notifications</title>
+    <title>BGMTgreen/notificacoes</title>
 </head>
 
 <body>
@@ -18,30 +18,37 @@
                 <h2>BGMT green</h2>
             </div>
             <div class="menu">
-                <a href="/homepage.html">
-                    Pagina Inicial
-                </a>
                 <a href="/Pages/clientes.html">
                     Clientes
                 </a>
                 <a href="/Pages/criarclientes.html">
                     Criar Clientes
                 </a>
-                <a id="emailLink" href="#">
+                <a id="emailLink" href="#" onclick="">
                     Suporte
                 </a>
                 <a class="config" href="/Pages/notificacao.html" onclick="">
-                    <img src="/IMG/bell-solid.svg" alt="Notificacao">
-                </a>
-                <a class="config" href="/Pages/perfil.html" onclick="">
-                    <img src="/IMG/user-solid.svg" alt="Perfil">
+                    <img src="/IMG/notif.svg" alt="Notificacao">
                 </a>
             </div>
         </div>
     </header>
     <section>
-
+        <div class="noti">
+            <h1>Notificações de Coleta</h1>
+            <div id="messages"></div>
+        </div>
     </section>
+
+    <script>
+        var emailLink = document.getElementById("emailLink");
+        var destinatario = "BGMTgreen@gmail.com";
+
+        emailLink.addEventListener("click", function () {
+        var link = "mailto:" + destinatario;
+        window.location.href = link;
+        });
+    </script>
 </body>
 
 </html>

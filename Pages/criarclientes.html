@@ -18,30 +18,48 @@
                 <h2>BGMT green</h2>
             </div>
             <div class="menu">
-                <a href="/homepage.html">
-                    Pagina Inicial
-                </a>
                 <a href="/Pages/clientes.html">
                     Clientes
                 </a>
                 <a href="/Pages/criarclientes.html">
                     Criar Clientes
                 </a>
-                <a id="emailLink" href="#">
+                <a id="emailLink" href="#" onclick="">
                     Suporte
                 </a>
-                <a class="config" href="/Pages/notificacao.html" onclick="">
-                    <img src="/IMG/bell-solid.svg" alt="Notificacao">
-                </a>
-                <a class="config" href="/Pages/perfil.html" onclick="">
-                    <img src="/IMG/user-solid.svg" alt="Perfil">
+                <a class="config" href="/Pages/notificacao.html">
+                    <img src="/IMG/notif.svg" alt="Notificacao">
                 </a>
             </div>
         </div>
     </header>
     <section>
-
+        <div class="table">
+            <h1>Cadastro de Clientes</h1>
+            <br>
+            <input type="text" placeholder="Nome Fantasia">
+            <br><br>
+            <input type="text" placeholder="CPF /CNPJ">
+            <br><br>
+            <input type="text" placeholder="Cidade">
+            <br><br>
+            <input type="text" placeholder="Estado">
+            <br><br>
+            <input type="text" placeholder="Telefone">
+            <br><br>
+            <button>Salvar</button>
+        </div>
     </section>
+
+    <script>
+        var emailLink = document.getElementById("emailLink");
+        var destinatario = "BGMTgreen@gmail.com";
+
+        emailLink.addEventListener("click", function () {
+        var link = "mailto:" + destinatario;
+        window.location.href = link;
+        });
+    </script>
 </body>
 
 </html>

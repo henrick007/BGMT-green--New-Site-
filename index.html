@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/homepage.css" />
+    <link rel="stylesheet" href="/CSS/index.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BGMTgreen</title>
@@ -18,24 +18,7 @@
                 <h2>BGMT green</h2>
             </div>
             <div class="menu">
-                <a href="/homepage.html">
-                    Pagina Inicial
-                </a>
-                <a href="/Pages/clientes.html">
-                    Clientes
-                </a>
-                <a href="/Pages/criarclientes.html">
-                    Criar Clientes
-                </a>
-                <a id="emailLink" href="#">
-                    Suporte
-                </a>
-                <a class="config" href="/Pages/notificacao.html" onclick="">
-                    <img src="/IMG/notif.svg" alt="Notificacao">
-                </a>
-                <a class="config" href="/Pages/perfil.html" onclick="">
-                    <img src="/IMG/perfil.svg" alt="Perfil">
-                </a>
+                <a href="./Pages/login.html">Login</a>
             </div>
         </div>
     </header>
@@ -47,7 +30,7 @@
                     Sensores Inteligentes, Coletas Eficiente
                 </h2>
                 <p>A tecnologia que faltava para sua empresa</p>
-                <a id="EmailLink" href="#">
+                <a id="EmailLink" href="#" onclick="">
                     <button>Marque uma Reunião</button></a>
             </div>
             <div class="sobre">
@@ -104,7 +87,27 @@
         <p>&copy;2023 BGMT green - Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function redirecionarLinkedin() {
+        window.location.href = "https://www.linkedin.com/company/bgmt-green/";
+        }
+
+        function redirecionarInstagram() {
+        window.location.href = "https://instagram.com/bgmtgreen?igshid=MzNlNGNkZWQ4Mg==";
+        }
+
+        function redirecionarWhatsApp() {
+        window.location.href = "https://static.vecteezy.com/system/resources/previews/000/407/894/original/red-coming-soon-neon-icon-vector.jpg";
+        }
+
+        var emailLink = document.getElementById("EmailLink");
+        var destinatario = "BGMTgreen@gmail.com";
+
+        emailLink.addEventListener("click", function () {
+        var link = "mailto:" + destinatario;
+        window.location.href = link;
+        });
+    </script>
 </body>
 
 </html>

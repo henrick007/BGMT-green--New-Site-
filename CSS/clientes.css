@@ -1,5 +1,7 @@
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .cabecalho {
@@ -32,7 +34,7 @@ header {
 
 .menu a {
     color: #808080;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     margin-right: 15px;
     transition: 0.5s;
@@ -44,6 +46,12 @@ header {
 
 .config img {
     width: 20px;
+}
+
+h1 {
+    color: #006400;
+    text-align: center;
+    font-size: 35px;
 }
 
 #bar {
@@ -69,7 +77,7 @@ header {
 .tab {
     text-align: center;
     width: 80%;
-    height: 700px;
+    height: 550px;
     margin: 0 auto;
 }
 
@@ -87,13 +95,33 @@ td {
 
 footer {
     text-align: center;
-    font-size: 11px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1020px) {
+    #bar {
+        width: 90%;
+    }
+
+    .search {
+        float: right;
+        margin-top: 5px;
+        margin-right: 10pxs;
+    }
+
+    .tab {
+        height: 640px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     footer {
         text-align: center;
         font-size: 7px;
+    }
+
+    .tab {
+        height: 650px;
     }
 }
 
@@ -104,5 +132,24 @@ footer {
 
     .config img {
         width: 20px;
+    }
+
+    .tab {
+        height: 590px;
+        width: 100%;
+    }
+
+    #bar {
+        width: 80%;
+    }
+
+    .search {
+        float: right;
+        margin-top: 5px;
+    }
+
+    th,
+    td {
+        font-size: 9px;
     }
 }

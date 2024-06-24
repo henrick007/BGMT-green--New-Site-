@@ -18,28 +18,23 @@
                 <h2>BGMT green</h2>
             </div>
             <div class="menu">
-                <a href="/homepage.html">
-                    Pagina Inicial
-                </a>
                 <a href="/Pages/clientes.html">
                     Clientes
                 </a>
                 <a href="/Pages/criarclientes.html">
                     Criar Clientes
                 </a>
-                <a id="emailLink" href="#">
+                <a id="emailLink" href="#" onclick="">
                     Suporte
                 </a>
                 <a class="config" href="/Pages/notificacao.html" onclick="">
                     <img src="/IMG/notif.svg" alt="Notificacao">
                 </a>
-                <a class="config" href="/Pages/perfil.html" onclick="">
-                    <img src="/IMG/perfil.svg" alt="Perfil">
-                </a>
             </div>
         </div>
     </header>
     <br>
+    <h1>Todos os Clientes</h1>
     <br>
     <section class="tab">
         <div>
@@ -68,7 +63,6 @@
                     <th>CPF /CNPJ</th>
                     <th>Cidade</th>
                     <th>Estado</th>
-                    <th>E-mail</th>
                     <th>Telefone</th>
                 </tr>
             </thead>
@@ -79,15 +73,21 @@
                     <td data-title="CPF /CNPJ">00.000.000/0001-63</td>
                     <td data-title="Cidade">Cuiabá</td>
                     <td data-title="Estado">Mato Grosso</td>
-                    <td data-title="E-mail">Teste01@gmail.com</td>
                     <td data-title="Telefone">(65)9 9876-5432</td>
                 </tr>
             </tbody>
         </table>
     </section>
-    <footer>
-        <p>&copy;2023 BGMT green - Todos os direitos reservados.</p>
-    </footer>
+
+    <script>
+        var emailLink = document.getElementById("emailLink");
+        var destinatario = "BGMTgreen@gmail.com";
+
+        emailLink.addEventListener("click", function () {
+        var link = "mailto:" + destinatario;
+        window.location.href = link;
+        });
+    </script>
 </body>
 
 </html>
